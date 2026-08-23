@@ -388,8 +388,139 @@ python -c "import PySide6, pandas, bs4, tkcalendar, openpyxl; print('''
 ''')"
 ```
 
-# 🚀 ¡Listo!
+## 🚀 ¡Listo!
 
 Una vez completados todos los pasos anteriores, la aplicación está preparada para ejecutarse correctamente.
 
 **⚠️ No omitas la instalación y verificación de dependencias.**
+
+---
+
+# 🖥️ Capturas de pantalla
+
+A continuación se muestran algunas de las principales funcionalidades de la aplicación **Gestor de actividades académicas**.
+
+## 🏠 Pantalla principal
+
+La aplicación cuenta con una interfaz gráfica para gestionar, crear, consultar, filtrar y editar las actividades académicas.
+
+---
+
+![Pantalla principal 01](https://i.imgur.com/Ox3pHor.jpeg)
+
+---
+
+![Pantalla principal 02](https://i.imgur.com/wIjKxPx.jpeg)
+
+---
+
+## 📋 Detalle de actividad
+
+![Detalle actividad](https://i.imgur.com/PkRbYIC.jpeg)
+
+---
+
+## 🆕 Nueva actividad
+
+![Nuevo actividad](https://i.imgur.com/5WVnZxC.jpeg)
+
+---
+
+## 📝 Editar actividad
+
+![Editar actividad](https://i.imgur.com/OST7xJB.jpeg)
+
+---
+
+## 🗑️ Eliminar actividad
+
+![Eliminar actividad](https://i.imgur.com/XelCCHa.jpeg)
+
+---
+
+## 📂 Cargar datos
+
+Desde el botón **"Cargar datos"** es posible cargar la información académica almacenada en archivos JSON.
+
+---
+
+![Cargar datos 01](https://i.imgur.com/U4S1HA0.jpeg)
+
+---
+
+![Cargar datos 02](https://i.imgur.com/7GJ2F2e.jpeg)
+
+---
+
+![Cargar datos 03](https://i.imgur.com/Dxw9Vlq.jpeg)
+
+---
+
+## 🔄 Unificación de datos
+
+La aplicación también permite unificar información proveniente de diferentes archivos para facilitar la gestión centralizada de las actividades académicas.
+
+---
+
+![Unificación datos 01](https://i.imgur.com/g7nqL0V.jpeg)
+
+---
+
+![Unificación datos 02](https://i.imgur.com/Qbhmr78.jpeg)
+
+---
+
+![Unificación datos 03](https://i.imgur.com/kQDtTRz.jpeg)
+
+---
+
+![Unificación datos 04](https://i.imgur.com/Md1EmL9.jpeg)
+
+---
+
+## 📊 Exportar Excel → JSON
+
+La aplicación permite seleccionar un archivo Excel y extraer automáticamente la información para convertirla al formato JSON utilizado por el sistema.
+
+---
+
+![Exportar Excel 01](https://i.imgur.com/DPf9J15.jpeg)
+
+---
+
+![Exportar Excel 02](https://i.imgur.com/biwglcV.jpeg)
+
+---
+
+![Exportar Excel 03](https://i.imgur.com/xTcNSLC.jpeg)
+
+---
+
+## 📅 Crear eventos de calendario
+
+La aplicación incluye la función **"Crear Eventos"**, que permite generar eventos de calendario a partir de las actividades académicas registradas.
+
+Esta funcionalidad facilita la organización de las actividades, permitiendo convertir las fechas y horarios de las actividades académicas en eventos de calendario.
+
+---
+
+![Crear eventos 01](https://i.imgur.com/bYVT7IL.jpeg)
+
+---
+
+![Crear eventos 02](https://i.imgur.com/EnIZICG.jpeg)
+
+---
+
+![Crear eventos 03](https://i.imgur.com/bHyogzP.jpeg)
+
+---
+
+![Crear eventos 04](https://i.imgur.com/ipVegAo.jpeg)
+
+---
+
+![Crear eventos 05](https://i.imgur.com/KVrR05J.jpeg)
+
+---
+##
