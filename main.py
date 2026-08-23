@@ -91,7 +91,8 @@ def verificar_e_instalar_dependencias():
         "PySide6": "PySide6",
         "tkcalendar": "tkcalendar",
         "pandas": "pandas",
-        "beautifulsoup4": "beautifulsoup4"
+        "beautifulsoup4": "beautifulsoup4",
+        "openpyxl": "openpyxl"
     }
 
     faltantes = []

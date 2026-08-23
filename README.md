@@ -1,4 +1,4 @@
-# # 🚀 Aplicación de Escritorio con Control de Estudio
+# 🚀 Aplicación de Escritorio con Control de Estudio
 
 > 🟢 **IMPORTANTE:** Antes de ejecutar la aplicación, debes instalar **TODAS las dependencias necesarias**.
 > ⚠️ **No ejecutes la aplicación antes de completar estos pasos.**
@@ -9,8 +9,8 @@
 
 Asegúrate de tener instalado:
 
-* 🐍 **Python 3.10 o superior**
-* 📦 **pip**
+* 🐍 Python 3.10 o superior
+* 📦 pip
 * 💻 Windows, Linux o macOS
 
 Comprueba que Python está instalado:
@@ -43,31 +43,33 @@ pip3 --version
 
 La aplicación utiliza los siguientes módulos externos:
 
-| 📦 Módulo        | 🎯 Uso                    |
-| ---------------- | ------------------------- |
-| `PySide6`        | 🖥️ Interfaz gráfica      |
-| `pandas`         | 📊 Procesamiento de datos |
-| `beautifulsoup4` | 🌐 Procesamiento de HTML  |
+| 📦 Módulo        | 🎯 Uso                                   |
+| ---------------- | ---------------------------------------- |
+| `PySide6`        | 🖥️ Interfaz gráfica                     |
+| `pandas`         | 📊 Procesamiento de datos                |
+| `beautifulsoup4` | 🌐 Procesamiento de HTML                 |
+| `tkcalendar`     | 📅 Calendarios y selección de fechas     |
+| `openpyxl`       | 📗 Lectura y escritura de archivos Excel |
 
 ### ⚡ Instalación rápida
 
 Ejecuta:
 
 ```bash
-pip install PySide6 pandas beautifulsoup4
+pip install PySide6 pandas beautifulsoup4 tkcalendar openpyxl
 ```
 
 Si tu sistema utiliza `pip3`:
 
 ```bash
-pip3 install PySide6 pandas beautifulsoup4
+pip3 install PySide6 pandas beautifulsoup4 tkcalendar openpyxl
 ```
 
 ### 🐍 Instalación recomendada usando Python
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install PySide6 pandas beautifulsoup4
+python -m pip install PySide6 pandas beautifulsoup4 tkcalendar openpyxl
 ```
 
 ---
@@ -79,7 +81,7 @@ python -m pip install PySide6 pandas beautifulsoup4
 Puedes comprobar todos los módulos de una sola vez:
 
 ```bash
-python -c "import PySide6, pandas, bs4; print('✅ Todas las dependencias están instaladas correctamente')"
+python -c "import PySide6, pandas, bs4, tkcalendar, openpyxl; print('✅ Todas las dependencias están instaladas correctamente')"
 ```
 
 Si todo está correcto, deberías obtener:
@@ -110,6 +112,18 @@ python -c "import pandas as pd; print('✅ pandas:', pd.__version__)"
 python -c "from bs4 import BeautifulSoup; print('✅ BeautifulSoup está instalado correctamente')"
 ```
 
+### 📅 tkcalendar
+
+```bash
+python -c "import tkcalendar; print('✅ tkcalendar está instalado correctamente')"
+```
+
+### 📗 openpyxl
+
+```bash
+python -c "import openpyxl; print('✅ openpyxl:', openpyxl.__version__)"
+```
+
 ---
 
 # 📋 5. Comprobar las dependencias con `pip`
@@ -126,6 +140,8 @@ O buscar específicamente:
 pip show PySide6
 pip show pandas
 pip show beautifulsoup4
+pip show tkcalendar
+pip show openpyxl
 ```
 
 Deberías encontrar información similar a:
@@ -138,6 +154,12 @@ Name: pandas
 Version: ...
 
 Name: beautifulsoup4
+Version: ...
+
+Name: tkcalendar
+Version: ...
+
+Name: openpyxl
 Version: ...
 ```
 
@@ -175,14 +197,14 @@ Cuando esté activo, normalmente aparecerá algo parecido a:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install PySide6 pandas beautifulsoup4
+python -m pip install PySide6 pandas beautifulsoup4 tkcalendar openpyxl
 ```
 
 ---
 
 # 🚀 7. Ejecutar la aplicación
 
-Una vez instaladas y verificadas las dependencias:
+Una vez instaladas y verificadas **todas las dependencias**:
 
 ```bash
 python nombre_de_tu_aplicacion.py
@@ -198,7 +220,7 @@ python main.py
 
 # 🧭 8. Flujo recomendado
 
-Sigue **exactamente este orden**:
+Sigue **exactamente** este orden:
 
 ```text
 🐍 Python instalado
@@ -213,7 +235,7 @@ Sigue **exactamente este orden**:
         ↓
 ✅ Dependencias OK
         ↓
-🚀 Ejecutar aplicación
+🚀 Aplicación lista
 ```
 
 ---
@@ -246,17 +268,39 @@ Para BeautifulSoup:
 python -m pip install beautifulsoup4
 ```
 
+Para tkcalendar:
+
+```bash
+python -m pip install tkcalendar
+```
+
+Para openpyxl:
+
+```bash
+python -m pip install openpyxl
+```
+
 Después vuelve a ejecutar la verificación:
 
 ```bash
-python -c "import PySide6, pandas, bs4; print('✅ Todas las dependencias están instaladas correctamente')"
+python -c "import PySide6, pandas, bs4, tkcalendar, openpyxl; print('✅ Todas las dependencias están instaladas correctamente')"
 ```
 
 ---
 
 # 📦 10. Dependencias externas utilizadas
 
-La aplicación utiliza módulos de la biblioteca estándar de Python que **NO necesitan instalación adicional**, entre ellos:
+La aplicación utiliza los siguientes módulos externos que **sí necesitan instalación**:
+
+```text
+PySide6
+pandas
+beautifulsoup4
+tkcalendar
+openpyxl
+```
+
+También utiliza módulos de la biblioteca estándar de Python que **NO necesitan instalación adicional**, entre ellos:
 
 ```text
 sys
@@ -279,6 +323,8 @@ Estos módulos forman parte de Python.
 PySide6
 pandas
 beautifulsoup4
+tkcalendar
+openpyxl
 ```
 
 ---
@@ -289,13 +335,13 @@ Si quieres realizar la instalación de una sola vez:
 
 ```bash
 python -m pip install --upgrade pip
-python -m pip install PySide6 pandas beautifulsoup4
+python -m pip install PySide6 pandas beautifulsoup4 tkcalendar openpyxl
 ```
 
 Después verifica:
 
 ```bash
-python -c "import PySide6, pandas, bs4; print('✅ INSTALACIÓN COMPLETADA CORRECTAMENTE')"
+python -c "import PySide6, pandas, bs4, tkcalendar, openpyxl; print('✅ INSTALACIÓN COMPLETADA CORRECTAMENTE')"
 ```
 
 Finalmente ejecuta:
@@ -314,6 +360,8 @@ python main.py
 * [ ] 🖥️ `PySide6` está instalado
 * [ ] 📊 `pandas` está instalado
 * [ ] 🌐 `beautifulsoup4` está instalado
+* [ ] 📅 `tkcalendar` está instalado
+* [ ] 📗 `openpyxl` está instalado
 * [ ] 🧪 Las dependencias fueron verificadas
 * [ ] ✅ No aparecen errores `ModuleNotFoundError`
 * [ ] 🚀 La aplicación está lista para ejecutarse
@@ -325,13 +373,15 @@ python main.py
 > 🟢 **Si este comando termina correctamente, puedes ejecutar la aplicación.**
 
 ```bash
-python -c "import PySide6, pandas, bs4; print('''
+python -c "import PySide6, pandas, bs4, tkcalendar, openpyxl; print('''
 ╔══════════════════════════════════════════╗
 ║       ✅ DEPENDENCIAS CORRECTAS          ║
 ║                                          ║
 ║  🖥️  PySide6          → OK              ║
 ║  📊  pandas           → OK              ║
 ║  🌐  BeautifulSoup    → OK              ║
+║  📅  tkcalendar       → OK              ║
+║  📗  openpyxl         → OK              ║
 ║                                          ║
 ║       🚀 APLICACIÓN LISTA               ║
 ╚══════════════════════════════════════════╝
